@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 373179a19814f6d41b09d1c325e9b0d5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SF Compact Display
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4368a5fcebc02fc448ea36165e762d5b, type: 3}
+  - {fileID: 12800000, guid: 308480b3417794246b60f4275050baac, type: 3}
+  - {fileID: 12800000, guid: 56ea2981d5bfe3e4e826d4e631c66121, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
