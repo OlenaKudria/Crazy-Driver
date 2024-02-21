@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,175 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: police_car1
-      rect:
-        serializedVersion: 2
-        x: 563
-        y: 2370
-        width: 287
-        height: 464
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2e12375494589f4cbef9b28736c35f2
-      internalID: -644033200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: police_car2
-      rect:
-        serializedVersion: 2
-        x: 1270
-        y: 2370
-        width: 313
-        height: 484
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 871034c1a44cfe549aedf2c460cc97df
-      internalID: 352399137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magnet_glow
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 2310
-        width: 832
-        height: 895
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f17846fa94047154aba012e80839b085
-      internalID: 2078006664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: magnet_car
-      rect:
-        serializedVersion: 2
-        x: 556
-        y: 1822
-        width: 336
-        height: 414
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f69ea6d6612194c42b1f2247700e0d65
-      internalID: -1703722208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shield_glow
-      rect:
-        serializedVersion: 2
-        x: 1694
-        y: 1383
-        width: 820
-        height: 892
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1aa13c01f9864040b1412b2f1bd0d51
-      internalID: 1457060960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nitro_glow
-      rect:
-        serializedVersion: 2
-        x: 1849
-        y: 564
-        width: 512
-        height: 731
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddb7aeca61df2e94d80ddf0be8ccc76b
-      internalID: -207519592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shield_car
-      rect:
-        serializedVersion: 2
-        x: 923
-        y: 1822
-        width: 336
-        height: 413
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8218c4f492d2d964e836f68b3923b3d6
-      internalID: 649798740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nitro_car
-      rect:
-        serializedVersion: 2
-        x: 1291
-        y: 1826
-        width: 338
-        height: 414
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 056cd055df9e075458387c0140264172
-      internalID: -586751592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -294,16 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      cars atlas_8: -1987822025
-      magnet_car: -1703722208
-      magnet_glow: 2078006664
-      nitro_car: -586751592
-      nitro_glow: -207519592
-      police_car1: -644033200
-      police_car2: 352399137
-      shield_car: 649798740
-      shield_glow: 1457060960
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
