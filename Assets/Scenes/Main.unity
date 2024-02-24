@@ -601,7 +601,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1370860687}
           m_TargetAssemblyTypeName: Player.Movement, Assembly-CSharp
-          m_MethodName: MoveRight
+          m_MethodName: MovedRight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1789496031}
   defaultSpeed: 3
-  turnSpeed: 2
+  turnSpeed: 2.5
   maxSpeed: 6
   minSpeed: 3
   stepSpeed: 0.5
@@ -1893,7 +1893,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1370860687}
           m_TargetAssemblyTypeName: Player.Movement, Assembly-CSharp
-          m_MethodName: MoveLeft
+          m_MethodName: MovedLeft
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

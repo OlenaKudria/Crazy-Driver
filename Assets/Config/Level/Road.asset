@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Road
   m_EditorClassIdentifier: 
   road: {fileID: 104309936322600933, guid: bc9b52bea87cf6a4c9ddfe7a3605d9e4, type: 3}
-  roadRange: 1.7
+  roadRange: 1.5
   pavementRange: 0.77

@@ -26,61 +26,55 @@ namespace Player
         [SerializeField] private RoadConfig road;
         
         private float _currentSpeed;
-        private Rigidbody2D _rigidbody2D;
         private bool _isChangingSpeed;
+        private float _horizontalSpeed;
    
         private void Awake()
         {
-            _rigidbody2D = player.GetComponentInChildren<Rigidbody2D>();
+            player.GetComponentInChildren<Rigidbody2D>();
             _currentSpeed = defaultSpeed;
             _isChangingSpeed = false;
+            _horizontalSpeed = 0;
         }
 
-        private void FixedUpdate()
-        {
-            Vector2 forwardVelocity = new Vector2(_rigidbody2D.velocity.x, _currentSpeed);
-            _rigidbody2D.velocity = forwardVelocity;
+        private void Update()
+        { 
+            MoveForward();
+            UpdatePosition();
         }
-        
-        private void Move(Direction directiong)
+
+        private void MoveForward()
         {
-            float speed = directiong switch
+           Vector3 forward = new Vector3(0, _currentSpeed, 0);
+           player.transform.localPosition += forward * Time.deltaTime;
+        }
+
+        private void UpdatePosition()
+        {
+            float leftEdge = -road.roadRange;
+            float rightEdge = road.roadRange;
+            
+            Vector3 position = player.transform.localPosition;
+            position.x = Mathf.Clamp(position.x + _horizontalSpeed * Time.deltaTime, leftEdge, rightEdge);
+            
+            player.transform.localPosition = new Vector3(position.x, position.y, 0);
+        }
+
+        private void ReceivedDirection(Direction direction)
+        {
+            _horizontalSpeed = direction switch
             {
                 Direction.Left => -turnSpeed,
                 Direction.Right => turnSpeed,
                 _ => 0f
             };
-            float leftEdge = -road.roadRange;
-            float rightEdge = road.roadRange;
-            
-            Vector3 playerPosition = player.transform.position;
-
-            bool bebra = (playerPosition.x > rightEdge) || (playerPosition.x < leftEdge);
-            if (playerPosition.x > rightEdge)
-            {
-                playerPosition.x = rightEdge;
-                player.transform.position = playerPosition;
-            }
-            
-            if (playerPosition.x < leftEdge)
-            {
-                playerPosition.x = leftEdge;
-                player.transform.position = playerPosition;
-            }
-
-            if (!bebra)
-            {
-                Vector2 velocity = new Vector2(speed, _rigidbody2D.velocity.y);
-                _rigidbody2D.velocity = velocity;
-            }
-          
         }
 
-        public void MoveLeft() => Move(Direction.Left);
+        public void MovedLeft() => ReceivedDirection(Direction.Left);
         
-        public void MoveRight() => Move(Direction.Right);
+        public void MovedRight() => ReceivedDirection(Direction.Right);
         
-        public void StopMove() => _rigidbody2D.velocity = Vector2.zero;
+        public void StopMove() => _horizontalSpeed = 0f;
         
         private IEnumerator ChangeSpeedCoroutine(Speed speed)
         {
