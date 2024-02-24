@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de055285747ccfe40a037c014a6be2d5, type: 3}
+  m_Name: Nitro
+  m_EditorClassIdentifier: 
+  powerUp: {fileID: 143377305, guid: 90da5e600a39db04cb14c8763b31ed9e, type: 3}
+  powerUpGlow: {fileID: 2079805769, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}
+  powerUpCar: {fileID: -2053931433, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}

@@ -1,4 +1,5 @@
 using System.Collections;
+using Config.Level;
 using UnityEngine;
 
 namespace Player
@@ -22,11 +23,12 @@ namespace Player
         [SerializeField] private float maxSpeed;
         [SerializeField] private float minSpeed;
         [SerializeField] private float stepSpeed;
+        [SerializeField] private RoadConfig road;
         
         private float _currentSpeed;
         private Rigidbody2D _rigidbody2D;
         private bool _isChangingSpeed;
-        
+   
         private void Awake()
         {
             _rigidbody2D = player.GetComponentInChildren<Rigidbody2D>();
@@ -39,22 +41,45 @@ namespace Player
             Vector2 forwardVelocity = new Vector2(_rigidbody2D.velocity.x, _currentSpeed);
             _rigidbody2D.velocity = forwardVelocity;
         }
-
-        private void Move(Direction direction)
+        
+        private void Move(Direction directiong)
         {
-            float speed = direction switch
+            float speed = directiong switch
             {
-                Direction.Left => - turnSpeed,
+                Direction.Left => -turnSpeed,
                 Direction.Right => turnSpeed,
                 _ => 0f
             };
+            float leftEdge = -road.roadRange;
+            float rightEdge = road.roadRange;
             
-            Vector2 velocity = new Vector2(speed, _rigidbody2D.velocity.y);
-            _rigidbody2D.velocity = velocity;
+            Vector3 playerPosition = player.transform.position;
+
+            bool bebra = (playerPosition.x > rightEdge) || (playerPosition.x < leftEdge);
+            if (playerPosition.x > rightEdge)
+            {
+                playerPosition.x = rightEdge;
+                player.transform.position = playerPosition;
+            }
+            
+            if (playerPosition.x < leftEdge)
+            {
+                playerPosition.x = leftEdge;
+                player.transform.position = playerPosition;
+            }
+
+            if (!bebra)
+            {
+                Vector2 velocity = new Vector2(speed, _rigidbody2D.velocity.y);
+                _rigidbody2D.velocity = velocity;
+            }
+          
         }
 
         public void MoveLeft() => Move(Direction.Left);
+        
         public void MoveRight() => Move(Direction.Right);
+        
         public void StopMove() => _rigidbody2D.velocity = Vector2.zero;
         
         private IEnumerator ChangeSpeedCoroutine(Speed speed)

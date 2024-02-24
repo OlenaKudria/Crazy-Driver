@@ -1,18 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadSpawner : MonoBehaviour
+namespace Level.Road
 {
-    // Start is called before the first frame update
-    void Start()
+    public class RoadSpawner : MonoBehaviour
     {
+        [SerializeField] private GameObject road;
+        [SerializeField] private GameObject player;
+            
+        private void Awake()
+        {
+            
+        }
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }
