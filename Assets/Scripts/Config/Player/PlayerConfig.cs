@@ -8,8 +8,9 @@ namespace Config.Player
         [field: SerializeField] public GameObject Player { get; private set; }
         [field: SerializeField] public float DefaultSpeed { get; private set;}
         [field: SerializeField] public float TurnSpeed { get; private set;}
-        [field: SerializeField] public float MaxSpeed { get; set;}
-        [field: SerializeField] public float MinSpeed { get; set;}
+        [field: SerializeField] public float MaxSpeed { get; private set;}
+        [field: SerializeField] public float MinSpeed { get; private set;}
         [field: SerializeField] public float StepSpeed { get; private set;}
+        [field: SerializeField] public float MaxHealth { get; private set;}
     }
 }

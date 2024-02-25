@@ -18,3 +18,4 @@ MonoBehaviour:
   <MaxSpeed>k__BackingField: 6
   <MinSpeed>k__BackingField: 3
   <StepSpeed>k__BackingField: 0.5
+  <MaxHealth>k__BackingField: 100

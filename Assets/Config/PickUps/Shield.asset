@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   <PowerUp>k__BackingField: {fileID: 649569918, guid: 90da5e600a39db04cb14c8763b31ed9e, type: 3}
+  <Time>k__BackingField: 15
   <PowerUpGlow>k__BackingField: {fileID: 1982741513, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}
   <PowerUpCar>k__BackingField: {fileID: 59656129, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}

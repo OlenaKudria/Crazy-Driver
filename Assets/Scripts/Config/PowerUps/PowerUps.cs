@@ -6,6 +6,7 @@ namespace Config.PowerUps
     public class PowerUps : ScriptableObject
     {
         [field: SerializeField] public Sprite PowerUp { get; private set;}
+        [field: SerializeField] public float Time { get; private set;}
         [field: SerializeField] public Sprite PowerUpGlow { get; private set;}
         [field: SerializeField] public Sprite PowerUpCar { get; private set;}
     }

@@ -28,7 +28,6 @@ namespace Player
    
         private void Start()
         {
-            player.GetComponent<Rigidbody2D>();
             _currentSpeed = playerConfig.DefaultSpeed;
             _isChangingSpeed = false;
             _horizontalSpeed = 0;

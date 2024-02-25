@@ -9,7 +9,6 @@ namespace Level.Road
         [SerializeField] private List<GameObject> roads;
         [SerializeField] private SpriteRenderer roadPart;
         private float _offset;
-        private SpriteRenderer _renderer;
         
         private void Start()
         {
@@ -26,13 +25,11 @@ namespace Level.Road
 
         private void GetOffset()
         {
-            if (roadPart == null)
-            {
-                Debug.Log("roadPart is null");
-                return;
+            if (roadPart != null)
+            { 
+                roadPart.TryGetComponent(out SpriteRenderer spriteRenderer);
+                _offset = spriteRenderer.bounds.size.y;
             }
-            _renderer = roadPart.GetComponent<SpriteRenderer>();
-            _offset = _renderer.bounds.size.y;
         }
         
         private void HandleRoadEntered()
