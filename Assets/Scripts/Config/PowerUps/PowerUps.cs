@@ -5,8 +5,8 @@ namespace Config.PowerUps
     [CreateAssetMenu(fileName = "PowerUps", menuName = "Config/PowerUps")]
     public class PowerUps : ScriptableObject
     {
-        public Sprite powerUp;
-        public Sprite powerUpGlow;
-        public Sprite powerUpCar;
+        [field: SerializeField] public Sprite PowerUp { get; private set;}
+        [field: SerializeField] public Sprite PowerUpGlow { get; private set;}
+        [field: SerializeField] public Sprite PowerUpCar { get; private set;}
     }
 }

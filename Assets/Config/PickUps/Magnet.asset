@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de055285747ccfe40a037c014a6be2d5, type: 3}
   m_Name: Magnet
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 793105136, guid: 90da5e600a39db04cb14c8763b31ed9e, type: 3}
-  powerUpGlow: {fileID: -1336836034, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}
-  powerUpCar: {fileID: -220713850, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}
+  <PowerUp>k__BackingField: {fileID: 793105136, guid: 90da5e600a39db04cb14c8763b31ed9e, type: 3}
+  <PowerUpGlow>k__BackingField: {fileID: -1336836034, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}
+  <PowerUpCar>k__BackingField: {fileID: -220713850, guid: 2f7d89193b973084db5a74ffa85ada0a, type: 3}

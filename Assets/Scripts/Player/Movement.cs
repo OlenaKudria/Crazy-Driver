@@ -1,5 +1,6 @@
 using System.Collections;
 using Config.Level;
+using Config.Player;
 using UnityEngine;
 
 namespace Player
@@ -18,21 +19,17 @@ namespace Player
     public class Movement : MonoBehaviour
     {
         [SerializeField] private GameObject player;
-        [SerializeField] private float defaultSpeed;
-        [SerializeField] private float turnSpeed;
-        [SerializeField] private float maxSpeed;
-        [SerializeField] private float minSpeed;
-        [SerializeField] private float stepSpeed;
-        [SerializeField] private RoadConfig road;
+        [SerializeField] private RoadConfig roadConfig;
+        [SerializeField] private PlayerConfig playerConfig;
         
         private float _currentSpeed;
         private bool _isChangingSpeed;
         private float _horizontalSpeed;
    
-        private void Awake()
+        private void Start()
         {
-            player.GetComponentInChildren<Rigidbody2D>();
-            _currentSpeed = defaultSpeed;
+            player.GetComponent<Rigidbody2D>();
+            _currentSpeed = playerConfig.DefaultSpeed;
             _isChangingSpeed = false;
             _horizontalSpeed = 0;
         }
@@ -51,8 +48,8 @@ namespace Player
 
         private void UpdatePosition()
         {
-            float leftEdge = -road.roadRange;
-            float rightEdge = road.roadRange;
+            float leftEdge = -roadConfig.RoadRange;
+            float rightEdge = roadConfig.RoadRange;
             
             Vector3 position = player.transform.localPosition;
             position.x = Mathf.Clamp(position.x + _horizontalSpeed * Time.deltaTime, leftEdge, rightEdge);
@@ -64,8 +61,8 @@ namespace Player
         {
             _horizontalSpeed = direction switch
             {
-                Direction.Left => -turnSpeed,
-                Direction.Right => turnSpeed,
+                Direction.Left => -playerConfig.TurnSpeed,
+                Direction.Right => playerConfig.TurnSpeed,
                 _ => 0f
             };
         }
@@ -89,13 +86,13 @@ namespace Player
                 {
                     case Speed.Brake:
                     {
-                        _currentSpeed -= stepSpeed;
+                        _currentSpeed -= playerConfig.StepSpeed;
                         yield return new WaitForSeconds(0.1f);
                         break;
                     }
                     case Speed.Gas:
                     {
-                        _currentSpeed += stepSpeed;
+                        _currentSpeed += playerConfig.StepSpeed;
                         yield return new WaitForSeconds(0.1f);
                         break;
                     }
@@ -108,12 +105,12 @@ namespace Player
         
         private bool AdjustSpeed(Speed speed)
         {
-            bool isBreak = (_currentSpeed <= minSpeed && speed == Speed.Brake) || 
-                           (_currentSpeed >= maxSpeed && speed == Speed.Gas);
+            bool isBreak = (_currentSpeed <= playerConfig.MinSpeed && speed == Speed.Brake) || 
+                           (_currentSpeed >= playerConfig.MaxSpeed && speed == Speed.Gas);
             if (isBreak)
             {
                 _isChangingSpeed = false;
-                _currentSpeed = speed == Speed.Brake ? minSpeed : maxSpeed;
+                _currentSpeed = speed == Speed.Brake ? playerConfig.MinSpeed : playerConfig.MaxSpeed;
             }
             return isBreak;
         }

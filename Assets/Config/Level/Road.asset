@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270f44d9aa4fb6b499db5ebb3178888c, type: 3}
   m_Name: Road
   m_EditorClassIdentifier: 
-  road: {fileID: 104309936322600933, guid: bc9b52bea87cf6a4c9ddfe7a3605d9e4, type: 3}
-  roadRange: 1.5
-  pavementRange: 0.77
+  <Road>k__BackingField: {fileID: 104309936322600933, guid: bc9b52bea87cf6a4c9ddfe7a3605d9e4, type: 3}
+  <RoadRange>k__BackingField: 1.5
+  <PavementRange>k__BackingField: 0.77
+  <DistanceForDestroy>k__BackingField: 5

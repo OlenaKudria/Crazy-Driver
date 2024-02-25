@@ -5,8 +5,11 @@ namespace Config.Level
     [CreateAssetMenu(fileName = "Road", menuName = "Config/Road")]
     public class RoadConfig : ScriptableObject
     {
-        public GameObject road;
-        public float roadRange;
-        public float pavementRange;
+        [field: SerializeField] public GameObject Road { get; private set; }
+        [field: SerializeField] public float RoadRange { get; private set; }
+        [field: SerializeField] public float PavementRange { get; private set; }
+        [field: SerializeField] public float DistanceForDestroy { get; private set; }
+        
+        
     }
 }
