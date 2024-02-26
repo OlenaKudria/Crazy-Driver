@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1250633008633264105}
   - component: {fileID: 4759517292408653446}
-  - component: {fileID: -7410162987095593190}
   - component: {fileID: 7305780293306363523}
+  - component: {fileID: -7410162987095593190}
   m_Layer: 0
   m_Name: Crack3
   m_TagString: Crack
@@ -86,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-7410162987095593190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4732027276785966659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24f433d9b40ca814fa33f7f8e9f33c0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &7305780293306363523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108,7 +96,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.16242582, y: -0.08121264}
@@ -124,3 +112,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.13667, y: 3.1783736}
   m_EdgeRadius: 0
+--- !u!114 &-7410162987095593190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4732027276785966659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f433d9b40ca814fa33f7f8e9f33c0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config: {fileID: 11400000, guid: dee371387ddcf9b4c9729207312d2287, type: 2}

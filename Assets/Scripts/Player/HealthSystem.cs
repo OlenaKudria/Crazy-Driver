@@ -22,14 +22,14 @@ namespace Player
             bar.UpdateHealthBar(_maxHealth, _currentHealth);
         }
         
-        private void Damage(float amount)
+        public void Damage(float amount)
         {
             _currentHealth -= amount;
             if (_currentHealth < 0) _currentHealth = 0;
             bar.UpdateHealthBar(_maxHealth, _currentHealth);
         }
         
-        private void Heal(float amount)
+        public void Heal(float amount)
         {
             _currentHealth += amount;
             if (_currentHealth > _maxHealth) _currentHealth = _maxHealth;
