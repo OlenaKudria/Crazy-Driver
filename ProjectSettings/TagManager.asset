@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - RoadEndPoint
+  - Block
+  - Crack
+  - Oil
+  - Holder
   layers:
   - Default
   - TransparentFX

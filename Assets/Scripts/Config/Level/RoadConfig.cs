@@ -8,8 +8,5 @@ namespace Config.Level
         [field: SerializeField] public GameObject Road { get; private set; }
         [field: SerializeField] public float RoadRange { get; private set; }
         [field: SerializeField] public float PavementRange { get; private set; }
-        [field: SerializeField] public float DistanceForDestroy { get; private set; }
-        
-        
     }
 }

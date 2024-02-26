@@ -21,21 +21,6 @@ namespace Player
         {
             bar.UpdateHealthBar(_maxHealth, _currentHealth);
         }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                Damage(25);
-                Debug.Log(_currentHealth);
-            }
-            
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                Heal(25);
-                Debug.Log(_currentHealth);
-            }
-        }
         
         private void Damage(float amount)
         {

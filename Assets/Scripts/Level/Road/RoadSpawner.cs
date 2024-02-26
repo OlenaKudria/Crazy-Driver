@@ -4,8 +4,14 @@ using UnityEngine;
 
 namespace Level.Road
 {
+    public delegate void ObstaclesCreationEventHandler(GameObject road, float offset);
+    public delegate void ObstaclesDestructionEventHandler(GameObject road);
+    
     public class RoadSpawner : MonoBehaviour
     {
+        public static event ObstaclesCreationEventHandler OnObstaclesCreation;
+        public static event ObstaclesDestructionEventHandler OnObstaclesDestruction;
+        
         [SerializeField] private List<GameObject> roads;
         [SerializeField] private SpriteRenderer roadPart;
         private float _offset;
@@ -39,6 +45,9 @@ namespace Level.Road
             float position = roads[^1].transform.position.y + _offset;
             movedRoad.transform.position = new Vector3(0f, position, 0f);
             roads.Add(movedRoad);
+            
+            OnObstaclesDestruction?.Invoke(movedRoad);
+            OnObstaclesCreation?.Invoke(movedRoad, _offset);
         }
         
         private void OnDestroy() => RoadTrigger.OnRoadEntered -= HandleRoadEntered;
