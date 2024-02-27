@@ -8,9 +8,10 @@ namespace UI.Panels
     {
         [SerializeField] private GameObject pauseMenu;
         [SerializeField] private GameObject countDown;
+        [SerializeField] private GameObject finishMenu;
+        [SerializeField] private GameObject optionsMenu;
         [SerializeField] private TextMeshProUGUI countDownText;
         [SerializeField] private float waitTime;
-        [SerializeField] private GameObject finishMenu;
 
         private void Start()
         {
@@ -58,6 +59,18 @@ namespace UI.Panels
         {
             Time.timeScale = 0f;
             finishMenu.SetActive(show);
+        }
+
+        public void Options()
+        {
+            pauseMenu.SetActive(false);
+            optionsMenu.SetActive(true);
+        }
+
+        public void CancelOptions()
+        {
+            pauseMenu.SetActive(true);
+            optionsMenu.SetActive(false);
         }
     }
 }
