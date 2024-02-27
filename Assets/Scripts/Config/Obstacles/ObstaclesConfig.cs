@@ -7,6 +7,7 @@ namespace Config.Obstacles
     {
         [field: SerializeField] public GameObject Prefab { get; private set;}
         [field: SerializeField] public float Time { get; private set;}
+        [field: SerializeField] public float SlowDownValue { get; private set;}
         [field: SerializeField] public float Damage { get; private set;}
         [field: Range(0f, 100f)] [field: SerializeField] public float Probability { get; private set;}
         [field: SerializeField] public float Weight { get; set;}

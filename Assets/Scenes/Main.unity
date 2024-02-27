@@ -315,7 +315,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ede2333e7e5e1f6418748e3a15118f22, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.27
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1578,7 +1578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 456, y: -693}
+  m_AnchoredPosition: {x: 375, y: -693}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &513850127
@@ -2485,6 +2485,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1392978728}
+        m_TargetAssemblyTypeName: UI.Scenes.ScenesManager, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &762878855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,7 +2547,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3157,6 +3169,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1392978728}
+        m_TargetAssemblyTypeName: UI.Scenes.ScenesManager, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1005655888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3207,7 +3231,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3646,7 +3670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -308, y: -679}
+  m_AnchoredPosition: {x: -227, y: -679}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1115817792
@@ -3962,6 +3986,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1392978728}
+        m_TargetAssemblyTypeName: UI.Scenes.ScenesManager, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1145220033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4012,7 +4048,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4326,7 +4362,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a8e31303de86fb744982dc4c0d62be2c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.313
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4568,7 +4604,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5069,7 +5105,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5165,6 +5201,7 @@ GameObject:
   - component: {fileID: 1370860687}
   - component: {fileID: 1370860688}
   - component: {fileID: 1370860689}
+  - component: {fileID: 1370860690}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -5229,7 +5266,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfbb7cf30f1c48e5b933ab1169a822b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1333003129}
+  scoreText: {fileID: 1333003129}
+  gameOverScoreText: {fileID: 334301128}
+  bestScoreText: {fileID: 1059423488}
+--- !u!114 &1370860690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370860685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ea67188688a9348b8f434883d6bdce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerConfig: {fileID: 11400000, guid: a382f007a0538f64cb98b91bbcebb89e, type: 2}
+--- !u!1 &1392978727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1392978729}
+  - component: {fileID: 1392978728}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1392978728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392978727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c517ed1df46a34297bf61d7f8ecc2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1392978729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392978727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 584.2613, y: 849.72736, z: -10.64687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456690086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5499,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1392978728}
+        m_TargetAssemblyTypeName: UI.Scenes.ScenesManager, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1544509454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5453,7 +5561,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5740,6 +5848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSystem: {fileID: 1370860688}
+  speedManager: {fileID: 1370860690}
 --- !u!1 &1582125673
 GameObject:
   m_ObjectHideFlags: 0
@@ -6186,7 +6295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 253, y: -719}
+  m_AnchoredPosition: {x: 175, y: -719}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &1938972254
@@ -6994,7 +7103,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 961b0eb555b4a4e4690e42f44cd8f204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.43
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

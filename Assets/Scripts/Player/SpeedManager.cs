@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+using Config.Player;
 using UnityEngine;
 
-public class SpeedManager : MonoBehaviour
+namespace Player
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SpeedManager : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private PlayerConfig playerConfig;
 
-    // Update is called once per frame
-    void Update()
-    {
+        public void SlowDown(float newMaxSpeed)
+        {
+            playerConfig.MaxSpeed = newMaxSpeed;
+        }
         
+        public void SpeedUp(float newMaxSpeed, float newMinSpeed)
+        {
+            
+        }
     }
 }
