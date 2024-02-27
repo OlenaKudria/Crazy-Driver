@@ -24,6 +24,7 @@ namespace Obstacles
         {
             RoadSpawner.OnObstaclesCreation += CreateObstacles;
             RoadSpawner.OnObstaclesDestruction += DestroyObstacles;
+            
             _random = new System.Random();
             _roadToHolderMap = new Dictionary<GameObject, GameObject>();
             _obstaclePositions = new List<Vector3>();
@@ -74,7 +75,7 @@ namespace Obstacles
         private void SpawnRandomObstacle(Vector3 randomPosition, GameObject holder)
         {
             int index = GetRandomObstacleIndex();
-            GameObject obstacle = obstaclesConfigs[index].Obstacle;
+            GameObject obstacle = obstaclesConfigs[index].Prefab;
             Instantiate(obstacle, holder.transform.position + randomPosition, Quaternion.identity, holder.transform);
         }
 

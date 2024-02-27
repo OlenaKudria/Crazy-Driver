@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016dc6e3a28aa134198b6b6fd10fb4be, type: 3}
   m_Name: Oil
   m_EditorClassIdentifier: 
-  <Obstacle>k__BackingField: {fileID: 2410825869790052704, guid: 1004244b239c7214cb2f44373973430d, type: 3}
+  <Prefab>k__BackingField: {fileID: 2410825869790052704, guid: 1004244b239c7214cb2f44373973430d, type: 3}
   <Time>k__BackingField: 10
   <Damage>k__BackingField: 0
   <Probability>k__BackingField: 55

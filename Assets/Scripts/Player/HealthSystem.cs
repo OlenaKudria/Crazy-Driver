@@ -27,7 +27,7 @@ namespace Player
         public void Damage(float amount)
         {
             _currentHealth -= amount;
-            if (_currentHealth < 0)
+            if (_currentHealth <= 0)
             {
                 _currentHealth = 0;
                 uiManager.ShowFinishMenu(true);

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016dc6e3a28aa134198b6b6fd10fb4be, type: 3}
   m_Name: Block
   m_EditorClassIdentifier: 
-  <Obstacle>k__BackingField: {fileID: 2831105518084649138, guid: e2d8170e30e9f9f42826f9952daeee78, type: 3}
+  <Prefab>k__BackingField: {fileID: 2831105518084649138, guid: e2d8170e30e9f9f42826f9952daeee78, type: 3}
   <Time>k__BackingField: 0
   <Damage>k__BackingField: 100
   <Probability>k__BackingField: 40
